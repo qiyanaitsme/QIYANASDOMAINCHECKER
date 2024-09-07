@@ -1,0 +1,2 @@
+python-whois==0.9.4
+aiogram==2.25.1
