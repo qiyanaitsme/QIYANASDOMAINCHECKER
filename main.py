@@ -49,7 +49,7 @@ async def handle_domain_check(message: types.Message):
     global waiting_for_domain
     domain = message.text
     await check_domain(domain, message.from_user.id)
-    waiting_for_domain = False  # Завершаем состояние
+    waiting_for_domain = False
     await bot.send_photo(message.from_user.id, WELCOME_IMAGE_URL, caption="Выберите действие:", reply_markup=main_menu())
 
 async def check_domain(domain, user_id):
